@@ -1,5 +1,14 @@
 ---
 layout: base
+uncommon-ext-js:
+  - "https://cdn.jsdelivr.net/npm/@rdkit/rdkit/dist/RDKit_minimal.js"
+  - "https://code.jquery.com/jquery-3.6.0.min.js"
+  - "https://3Dmol.csb.pitt.edu/build/3Dmol-min.js"
+  - "https://cdn.plot.ly/plotly-latest.min.js"
+  - "https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"
+uncommon-js:
+  - "/assets/js/rdkit-init.js"
+  - "/assets/js/rdkit-visualise.js"
 ---
 
 {% include header.html type="post" %}
@@ -92,5 +101,3 @@ layout: base
     </div>
   </div>
 </main>
-
-<script src="{{ '/assets/js/static-visualisations.js' | relative_url }}"></script>

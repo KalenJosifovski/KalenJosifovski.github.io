@@ -11,4 +11,5 @@ ehthumbs.db
 Gemfile.lock
 
 beautiful-jekyll-theme-*.gem
-.aider*
+
+old_posts

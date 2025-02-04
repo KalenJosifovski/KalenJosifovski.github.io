@@ -1,16 +1,15 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Hey, I’m Kalen — an organic chemist and aspirational data scientist. 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I’ve worked on on everything from designing new drugs to functionalising nanoparticles but my current passion lies at the intersection of medicinal chemistry and AI. 
 
-What else do you need?
+Outside the lab (or my laptop), you’ll find me bouldering, training Muay Thai, or scuba diving. 
 
-### My story
+This blog is where I share my thoughts, experiments, and the occasional rant.
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+
+ 

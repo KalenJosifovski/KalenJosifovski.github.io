@@ -1,39 +1,3 @@
-<!-- RDKit -->
-<script src="https://cdn.jsdelivr.net/npm/@rdkit/rdkit/dist/RDKit_minimal.js" type="application/javascript"></script>
-<script>
-  window.addEventListener('load', function () {
-    console.log('Checking RDKit availability...');
-    function initializeRDKit() {
-      if (typeof window.initRDKitModule !== 'undefined') {
-        console.log('Found RDKit module, initializing...');
-        window.initRDKitModule().then(function (RDKit) {
-          console.log('RDKit initialized successfully');
-          window.RDKit = RDKit;
-          window.dispatchEvent(new Event('rdkit-ready'));
-        }).catch(function (error) {
-          console.error('RDKit initialization failed:', error);
-        });
-      } else {
-        console.log('RDKit module not found, retrying in 1 second...');
-        setTimeout(initializeRDKit, 1000);
-      }
-    }
-    initializeRDKit();
-  });
-</script>
-
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- 3Dmol.js -->
-<script src="https://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
-
-<!-- Plotly -->
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
-<!-- DataTables (if needed) -->
-<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-
 {% if include.js.sri %}
 <script src="{{ include.js.href }}" integrity="{{ include.js.sri }}" crossorigin="anonymous"></script>
 {% elsif include.js.href %}

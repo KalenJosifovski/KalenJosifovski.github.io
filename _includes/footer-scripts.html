@@ -19,6 +19,19 @@
   {% endfor %}
 {% endif %}
 
+<!-- Conditionals to load specific scripts for blog posts -->
+{% if layout.uncommon-ext-js %}
+  {% for js in layout.uncommon-ext-js %}
+    {% include ext-js.html js=js %}
+  {% endfor %}
+{% endif %}
+
+{% if layout.uncommon-js %}
+  {% for js in layout.uncommon-js %}
+    <script src="{{ js | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
+
 {% if site.site-js %}
   {% for js in site.site-js %}
     <script src="{{ js | relative_url }}"></script>
