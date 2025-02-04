@@ -1,0 +1,15 @@
+{% if include.css.sri %}
+<link href="{{ include.css.href }}" rel="stylesheet" integrity="{{ include.css.sri }}" crossorigin="anonymous">
+{% elsif include.css.href %}
+<link rel="stylesheet" href="{{ include.css.href }}">
+{% else %}
+<link rel="stylesheet" href="{{ include.css }}">
+{% endif %}
+
+<!-- <!-- {% if page.dataframe and page.dataframe.source %}
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+{% endif %}
+
+<!-- Ensure the main site styling is loaded -->
+<link rel="stylesheet" href="{{ '/assets/css/beautifuljekyll.css' | relative_url }}"> -->
+ -->
